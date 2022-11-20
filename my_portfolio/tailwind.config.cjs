@@ -1,13 +1,15 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
+  darkMode: 'class',
   content: ["./index.html", "./src/**/*.{js,jsx}"],
   mode: "jit",
   theme: {
     extend: {
       colors: {
-        primary: "#00040f",
+        primary: "#fafafa",
+        dark: "#18181b",
         secondary: "#00f6ff",
-        dimWhite: "rgba(255, 255, 255, 0.7)",
+        dimWhite: "#fafafa",
         dimBlue: "rgba(9, 151, 124, 0.1)",
       },
       fontFamily: {

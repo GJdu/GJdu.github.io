@@ -1,7 +1,12 @@
 import React, {useState} from 'react';
 
-import {close, logo, menu } from '../assets';
+import {close, portrait, menu } from '../assets';
 import {navLinks} from '../constants'
+
+import ReactDOM from 'react-dom'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faMoon } from '@fortawesome/free-solid-svg-icons'
+
 
 const Navbar = () => {
 
@@ -9,14 +14,15 @@ const Navbar = () => {
 
     return (
         <nav className='w-full flex py-6 justify-between items-center navbar'>
-            <img src={logo} alt="hoodbank" className='w-[124px] h-[32px]' />
-            <ul className='list-none sm:flex hidden justify-end items-center flex-1'>
+            <img src={portrait} alt="a1670081.jpg" className='w-[48px] h-[48px] rounded-full' />
+            <ul className='list-none sm:flex hidden justify-center items-center
+            rounded-full bg-dimWhite dark:bg-zinc-800 sm:shadow-xl sm:w-80 sm:h-10'>
                 {navLinks.map((nav, index) => (
                     <li
                     key={nav.id}
-                    className={`font-poppins font-normal cursor-pointer text-[16px]
-                    ${index === navLinks.length -1 ? 'mr-0' : 'mr-10'} 
-                    text-white`}
+                    className={`font-sans hover:text-teal-400 font-bold cursor-pointer text-[12px]
+                    ${index === navLinks.length -1 ? 'mr-0' : 'mr-8'} 
+                    text-black dark:text-white`}
                     >
                         <a href={`#${nav.id}`}>
                             {nav.title}
@@ -42,7 +48,7 @@ const Navbar = () => {
                         key={nav.id}
                         className={`font-poppins font-normal cursor-pointer text-[16px]
                         ${index === navLinks.length -1 ? 'mr-0' : 'mb-4'} 
-                        text-white`}
+                        text-black dark:text-white`}
                         >
                             <a href={`#${nav.id}`}>
                                 {nav.title}
@@ -52,6 +58,10 @@ const Navbar = () => {
                 </ul>
             </div>
 
+            <ul className='list-none sm:flex hidden justify-center items-center
+            rounded-full bg-dimWhite dark:bg-zinc-800 sm:shadow-inner sm:w-10 sm:h-10'>
+                <FontAwesomeIcon icon={faMoon} inverse />
+            </ul>
         </nav>
     )
 }

@@ -6,18 +6,9 @@ import { DarkModeSwitcher } from '../components';
 
 import ReactDOM from 'react-dom';
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faMoon, faSun } from '@fortawesome/free-solid-svg-icons';
-
 const Navbar = () => {
 
     const [toggle, setToggle] = useState(false);
-    // const [toggleDark, setToggleDark] = useState(false);
-    const [isDarkMode, setDarkMode] = useState(false);
-
-    const toggleDarkMode = () => {
-        setDarkMode((prev) => !prev)
-    };
 
     return (
         <nav className='w-full flex py-6 justify-between items-center navbar'>
@@ -65,16 +56,13 @@ const Navbar = () => {
                 </ul>
             </div>
 
-            {/* <ul className='list-none sm:flex hidden justify-center items-center
+            <ul className='list-none sm:flex hidden justify-center items-center
             rounded-full bg-dimWhite dark:bg-zinc-800 sm:shadow-lg sm:w-10 sm:h-10' 
-            onClick={() => setToggleDark((prev) => !prev)}
             >
                 <div className='sm:flex justify-end item-center'>
-                    {toggleDark ? <FontAwesomeIcon icon={faMoon} /> : <FontAwesomeIcon icon={faSun} style={{color:"teal"}}/> }
+                    <DarkModeSwitcher/>
                 </div>
-            </ul> */}
-
-            <DarkModeSwitcher/>
+            </ul>
         </nav>
     )
 }

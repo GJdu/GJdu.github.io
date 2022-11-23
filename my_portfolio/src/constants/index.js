@@ -19,6 +19,23 @@ export const navLinks = [
   },
 ];
 
+export const jobs = [
+  {
+      id: 'job-1',
+      logo: instagram,
+      company: 'Consilium Technology',
+      position: 'Software Engineer',
+      date: '2019-2020',
+  },
+  {
+      id: 'job-2',
+      logo: instagram,
+      company: 'Defence Science and Technology Group (DSTG)',
+      position: 'Undergraduate Software Engineer',
+      date: '2017-2019',
+  },
+];
+
 export const features = [
   {
     id: "feature-1",

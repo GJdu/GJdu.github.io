@@ -2,7 +2,7 @@
 import styles from './style';
 import React, {useState} from 'react';
 
-import { Navbar, Hero, Stats, Business, Billing, CardDeal, Testimonials, Clients, CTA, Footer} from './components';
+import { Navbar, Hero } from './components';
 
 const App = () => {
 
@@ -19,7 +19,6 @@ const App = () => {
           <Hero/>
         </div>
       </div>
-      
     </div>
   )
 }

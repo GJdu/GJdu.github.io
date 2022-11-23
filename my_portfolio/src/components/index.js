@@ -1,7 +1,6 @@
 import Navbar from "./Navbar";
-import Billing from "./Billing";
+import JobCard from "./JobCard";
 import CardDeal from "./CardDeal";
-import Business from "./Business";
 import Clients from "./Clients";
 import CTA from "./CTA";
 import Stats from "./Stats";
@@ -13,9 +12,8 @@ import DarkModeSwitcher from "./DarkModeSwitcher";
 export {
   DarkModeSwitcher,
   Navbar,
-  Billing,
+  JobCard,
   CardDeal,
-  Business,
   Clients,
   CTA,
   Stats,

@@ -1,6 +1,6 @@
 import styles from "../style";
+import React from 'react';
 import { vball01 } from "../assets";
-import GetStarted from "./GetStarted";
 import {JobCard} from '../components';
 
 const Hero = () => {
@@ -28,17 +28,13 @@ const Hero = () => {
         </p>
       </div>
 
-      <div className={`flex-1 flex flex-col ${styles.flexCenter} md:my-10 my-10 relative`}>
+      <div className={`flex-1 flex flex-col ${styles.flexCenter} md:my-10 my-10 relative gap-y-16`}>
         <div>
           <img src={vball01} alt="vball" className="aspect-square border-0 rounded-lg rotate-6 w-4/5" />
         </div>
         <div>
           <JobCard/>
         </div>
-      </div>
-
-      <div className={`ss:hidden ${styles.flexCenter}`}>
-        <GetStarted />
       </div>
     </section>
   );

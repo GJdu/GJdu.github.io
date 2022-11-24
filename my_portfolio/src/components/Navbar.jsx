@@ -6,13 +6,17 @@ import { DarkModeSwitcher } from '../components';
 
 import ReactDOM from 'react-dom';
 
-const Navbar = () => {
+import { Home, About, Projects, Contacts } from '../components';
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+
+function Navbar () {
 
     const [toggle, setToggle] = useState(false);
 
     return (
         <nav className='w-full flex py-6 justify-between items-center navbar'>
             <img src={portrait} alt="a1670081.jpg" className='w-[48px] h-[48px] rounded-full' />
+
             <ul className='list-none sm:flex hidden justify-center items-center
             rounded-full bg-dimWhite dark:bg-zinc-800 sm:shadow-lg sm:w-80 sm:h-10'>
                 {navLinks.map((nav, index) => (
@@ -22,9 +26,10 @@ const Navbar = () => {
                     ${index === navLinks.length -1 ? 'mr-0' : 'mr-8'} 
                     text-black dark:text-white`}
                     >
-                        <a href={`#${nav.id}`}>
+                        {/* <a href={`#${nav.id}`}>
                             {nav.title}
-                        </a>
+                        </a> */}
+                        <Link to={nav.route}>{nav.title}</Link>
                     </li>
                 ))}
             </ul>
@@ -64,7 +69,7 @@ const Navbar = () => {
                 </div>
             </ul>
         </nav>
-    )
+    );
 }
 
 export default Navbar

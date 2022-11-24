@@ -4,10 +4,7 @@ import {close, portrait, menu } from '../assets';
 import {navLinks} from '../constants';
 import { DarkModeSwitcher } from '../components';
 
-import ReactDOM from 'react-dom';
-
-import { Home, About, Projects, Contacts } from '../components';
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 function Navbar () {
 
@@ -26,9 +23,6 @@ function Navbar () {
                     ${index === navLinks.length -1 ? 'mr-0' : 'mr-8'} 
                     text-black dark:text-white`}
                     >
-                        {/* <a href={`#${nav.id}`}>
-                            {nav.title}
-                        </a> */}
                         <Link to={nav.route}>{nav.title}</Link>
                     </li>
                 ))}

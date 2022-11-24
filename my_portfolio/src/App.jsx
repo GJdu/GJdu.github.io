@@ -20,12 +20,6 @@ function App () {
               <Navbar/>
             </div>
           </div>
-
-          {/* <div className={`bg-primary dark:bg-secondary ${styles.flexStart}`}>
-            <div className={`${styles.boxWidth}`}>
-              <Hero/>
-            </div>
-          </div> */}
         </div>
 
         <Routes>

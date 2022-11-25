@@ -17,7 +17,6 @@ export default function DarkModeSwitcher() {
     <>
       <div>
           <DarkModeSwitch
-            sunColor='#2dd4bf'
             onChange={toggleDarkMode} 
             checked={isDarkMode}
             size={25}

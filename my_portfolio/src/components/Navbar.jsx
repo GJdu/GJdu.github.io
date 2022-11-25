@@ -4,11 +4,15 @@ import {close, portrait, menu } from '../assets';
 import {navLinks} from '../constants';
 import { DarkModeSwitcher } from '../components';
 
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
+import { text } from '@fortawesome/fontawesome-svg-core';
 
 function Navbar () {
 
     const [toggle, setToggle] = useState(false);
+    const location = useLocation();
+
+    console.log(location.pathname);
 
     return (
         <nav className='w-3/4 flex py-6 justify-between items-center mx-auto navbar'>
@@ -20,10 +24,18 @@ function Navbar () {
                     <li
                     key={nav.id}
                     className={`font-sans hover:text-teal-400 dark:hover:text-teal-400 font-bold cursor-pointer text-[12px]
-                    ${index === navLinks.length -1 ? 'mr-0' : 'mr-8'} 
-                    text-black dark:text-white`}
+                    ${index === navLinks.length -1 ? 'mr-0' : 'mr-8'}
+                    ${nav.route === location.pathname ? 'text-teal-400' : 'text-black dark:text-white' } 
+                     relative py-2.5`}
                     >
-                        <Link to={nav.route}>{nav.title}</Link>
+                        <Link to={nav.route} className="block">
+                            {nav.title}
+                            {nav.route === location.pathname ? 
+                                <span class="absolute inset-x-1 -bottom-px h-px bg-gradient-to-r from-teal-500/0 via-teal-500/40 to-teal-500/0 dark:from-teal-400/0 dark:via-teal-400/40 dark:to-teal-400/0"></span>
+                                : <span></span>
+                        }
+                        </Link>
+                        
                     </li>
                 ))}
             </ul>

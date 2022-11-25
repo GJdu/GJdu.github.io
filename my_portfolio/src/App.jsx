@@ -9,10 +9,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 function App () {
 
   return (
-    
-      <div className='flex h-screen w-screen items-stretch'>
-        <div className='flex-1 bg-black'></div>
-        <div className='grow-0 shrink basis-[1280px] bg-primary'>
+      <Layout>
           <Router>
             <div className='bg-primary dark:bg-secondary w-full overflow-hidden'>
               <div className={`${styles.paddingX} ${styles.flexCenter}`}>
@@ -29,10 +26,7 @@ function App () {
               <Route path="/Contacts" element={<Contacts/>}/>
             </Routes>
           </Router>
-        </div>
-        <div className='flex-1 bg-black'></div>
-      </div>
-    
+      </Layout>
   )
 }
 

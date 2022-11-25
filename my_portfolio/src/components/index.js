@@ -7,6 +7,7 @@ import Home from './Home';
 import About from './About';
 import Contacts from './Contacts';
 import Projects from "./Projects";
+import Layout from "./Layout";
 
 export {
   DarkModeSwitcher,
@@ -18,4 +19,5 @@ export {
   About,
   Contacts,
   Projects,
+  Layout,
 };

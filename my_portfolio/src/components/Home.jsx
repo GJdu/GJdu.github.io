@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from '../style';
 
-import {Navbar, Hero} from "../components"
+import {Hero} from "../components"
 
 function Home () {
     return (

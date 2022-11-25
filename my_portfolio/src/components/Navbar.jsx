@@ -11,7 +11,7 @@ function Navbar () {
     const [toggle, setToggle] = useState(false);
 
     return (
-        <nav className='w-full flex py-6 justify-between items-center navbar'>
+        <nav className='w-3/4 flex py-6 justify-between items-center mx-auto navbar'>
             <img src={portrait} alt="a1670081.jpg" className='w-[48px] h-[48px] rounded-full' />
 
             <ul className='list-none sm:flex hidden justify-center items-center
@@ -19,7 +19,7 @@ function Navbar () {
                 {navLinks.map((nav, index) => (
                     <li
                     key={nav.id}
-                    className={`font-sans hover:text-teal-400 font-bold cursor-pointer text-[12px]
+                    className={`font-sans hover:text-teal-400 dark:hover:text-teal-400 font-bold cursor-pointer text-[12px]
                     ${index === navLinks.length -1 ? 'mr-0' : 'mr-8'} 
                     text-black dark:text-white`}
                     >

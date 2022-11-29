@@ -1,8 +1,8 @@
 import React from 'react'
 import { jobs } from '../constants'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBriefcase } from '@fortawesome/free-solid-svg-icons'
 import CardLayout from './CardLayout'
+import styles from '../style'
 
 const JobCard = () => {
   return (
@@ -21,8 +21,8 @@ const JobCard = () => {
                                 {company}
                             </h1>
                             <div className='flex justify-between gap-8'>
-                                <p className='flex-1 text-zinc-400 text-xs'>{position}</p>
-                                <p className='flex-0 text-zinc-400 text-xs w-24'>{date}</p>
+                                <p className={`flex-1 ${styles.paragraphLight}`}>{position}</p>
+                                <p className={`flex-0 ${styles.paragraphLight} w-24`}>{date}</p>
                             </div>
                         </div>
                     </div>

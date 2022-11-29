@@ -5,19 +5,25 @@ import Hero from "./Hero";
 import DarkModeSwitcher from "./DarkModeSwitcher";
 import Home from './Home';
 import About from './About';
-import Contacts from './Contacts';
 import Projects from "./Projects";
 import Layout from "./Layout";
+import Skills from "./Skills";
 
 export {
-  DarkModeSwitcher,
+
+  // Sections
   Navbar,
-  JobCard,
-  Footer,
   Hero,
+
+  // Utilis
+  DarkModeSwitcher,
+  JobCard,
+  Layout,
+  Footer,
+
+  // Pages
   Home,
   About,
-  Contacts,
   Projects,
-  Layout,
+  Skills,
 };

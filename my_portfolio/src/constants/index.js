@@ -1,7 +1,8 @@
-import { facebook, instagram, linkedin, DSTG } from "../assets";
-import { ReactComponent as Consilium } from "../assets/consilium-logo-white.svg";
+import { facebook, instagram, linkedin, DSTG, Consilium,
+          unreal, tensorflow, pytorch, keras, python, cplusplus, colab,
+          chinese, english, spanish  
 
-
+} from "../assets";
 
 export const navLinks = [
   {
@@ -20,9 +21,52 @@ export const navLinks = [
     route: "/Projects",
   },
   {
-    id: "contacts",
-    title: "Contacts",
-    route: "/Contacts",
+    id: "skills",
+    title: "Skills",
+    route: "/Skills",
+  },
+];
+
+export const skillsIcons = [
+  {
+    id: "unreal",
+    icon: unreal,
+  },
+  {
+    id: "tensorflow",
+    icon: tensorflow,
+  },
+  {
+    id: "pytorch",
+    icon: pytorch,
+  },
+  {
+    id: "keras",
+    icon: keras,
+  },
+  {
+    id: "python",
+    icon: python,
+  },
+  {
+    id: "cplusplus",
+    icon: cplusplus,
+  },
+  {
+    id: "colab",
+    icon: colab,
+  },
+  {
+    id: "chinese",
+    icon: chinese,
+  },
+  {
+    id: "english",
+    icon: english,
+  },
+  {
+    id: "spanish",
+    icon: spanish,
   },
 ];
 

@@ -5,14 +5,11 @@ import {navLinks} from '../constants';
 import { DarkModeSwitcher } from '../components';
 
 import { Link, useLocation } from 'react-router-dom';
-import { text } from '@fortawesome/fontawesome-svg-core';
 
 function Navbar () {
 
     const [toggle, setToggle] = useState(false);
     const location = useLocation();
-
-    console.log(location.pathname);
 
     return (
         <nav className='w-3/4 flex py-6 justify-between items-center mx-auto navbar'>

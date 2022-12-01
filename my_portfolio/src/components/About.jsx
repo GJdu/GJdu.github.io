@@ -1,14 +1,18 @@
-
 import React from 'react';
-  
+import styles from '../style';
+
+import {Hero} from "."
+
 function About () {
-    return <div>
-        <h2>GeeksforGeeks is a computer science portal for geeks!</h2>
-  
-        Read more about us at : 
-        <a href="https://www.geeksforgeeks.org/about/">
-            https://www.geeksforgeeks.org/about/
-        </a>
+    return (
+      <div className='bg-primary dark:bg-secondary w-full overflow-hidden'>
+      <div className={`bg-primary dark:bg-secondary ${styles.flexStart}`}>
+        <div className={`${styles.boxWidth}`}>
+          <Hero/>
+        </div>
+      </div>
     </div>
+      )
 }
+  
 export default About;

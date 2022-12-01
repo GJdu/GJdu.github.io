@@ -3,7 +3,7 @@ import styles from './style';
 import React from 'react';
 
 import { Navbar, Layout, Footer } from "./components"
-import { Home, About, Projects, Skills } from './components';
+import { About, Experiences, Projects, Skills } from './components';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 function App () {
@@ -20,8 +20,8 @@ function App () {
             </div>
     
             <Routes>
-              <Route path="/" element={<Home/>}/>
-              <Route path="/About" element={<About/>}/>
+              <Route path="/" element={<About/>}/>
+              <Route path="/Experiences" element={<Experiences/>}/>
               <Route path="/Projects" element={<Projects/>}/>
               <Route path="/Skills" element={<Skills/>}/>
             </Routes>

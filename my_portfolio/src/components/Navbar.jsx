@@ -13,7 +13,7 @@ function Navbar () {
 
     return (
         <nav className='w-3/4 flex py-6 justify-between items-center mx-auto navbar'>
-            <img src={portrait} alt="a1670081.jpg" className='w-[48px] h-[48px] rounded-full' />
+            <div></div>
 
             <ul className='list-none sm:flex hidden justify-center items-center
             rounded-full bg-dimWhite dark:bg-zinc-800 sm:shadow-lg sm:w-80 sm:h-10'>

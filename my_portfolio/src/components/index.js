@@ -3,11 +3,12 @@ import JobCard from "./JobCard";
 import Footer from "./Footer";
 import Hero from "./Hero";
 import DarkModeSwitcher from "./DarkModeSwitcher";
-import Home from './Home';
 import About from './About';
+import Experiences from './Experiences';
 import Projects from "./Projects";
 import Layout from "./Layout";
 import Skills from "./Skills";
+import MoreDetails from "./MoreDetails";
 
 export {
 
@@ -20,10 +21,11 @@ export {
   JobCard,
   Layout,
   Footer,
+  MoreDetails,
 
   // Pages
-  Home,
   About,
+  Experiences,
   Projects,
   Skills,
 };

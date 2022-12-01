@@ -1,19 +1,20 @@
-import { facebook, instagram, linkedin, DSTG, Consilium,
+import { Facebook, Instagram, Linkedin, Twitter,
+          DSTG, Consilium,
           unreal, tensorflow, pytorch, keras, python, cplusplus, colab,
-          chinese, english, spanish  
-
+          chinese, english, spanish ,
+          infinite_img, 
 } from "../assets";
 
 export const navLinks = [
   {
-    id: "home",
-    title: "Home",
+    id: "about",
+    title: "About",
     route: "/",
   },
   {
-    id: "about",
-    title: "About",
-    route: "/About",
+    id: "experiences",
+    title: "Experiences",
+    route: "/Experiences",
   },
   {
     id: "projects",
@@ -30,7 +31,10 @@ export const navLinks = [
 export const skillsIcons = [
   {
     id: "unreal",
+    title: "Infinite Studio",
     icon: unreal,
+    img: infinite_img,
+    description: "Infinite studio is a real-time multi-spectral simulation platform powered by Unreal Engine 4 (UE4). The project explores the capabilities of modern gaming engine, allowing highly detailed simulation in a complex environment with consumer-grade hardware.",
   },
   {
     id: "tensorflow",
@@ -90,17 +94,22 @@ export const jobs = [
 export const socialMedia = [
   {
     id: "social-media-1",
-    icon: instagram,
+    Icon: Instagram,
     link: "https://www.instagram.com/",
   },
   {
     id: "social-media-2",
-    icon: facebook,
+    Icon: Facebook,
     link: "https://www.facebook.com/",
   },
   {
     id: "social-media-3",
-    icon: linkedin,
+    Icon: Linkedin,
+    link: "https://www.linkedin.com/",
+  },
+  {
+    id: "social-media-4",
+    Icon: Twitter,
     link: "https://www.linkedin.com/",
   },
 ];

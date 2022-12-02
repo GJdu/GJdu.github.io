@@ -9,6 +9,8 @@ import Projects from "./Projects";
 import Layout from "./Layout";
 import Skills from "./Skills";
 import MoreDetails from "./MoreDetails";
+import CardExperience from "./CardExperience";
+import CardExperienceLayout from "./CardExperienceLayout";
 
 export {
 
@@ -22,6 +24,8 @@ export {
   Layout,
   Footer,
   MoreDetails,
+  CardExperience,
+  CardExperienceLayout,
 
   // Pages
   About,

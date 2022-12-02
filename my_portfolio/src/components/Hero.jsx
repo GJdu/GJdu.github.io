@@ -7,8 +7,8 @@ import { JobCard } from '../components';
 const Hero = () => {
   return (
     <section id="hero" className={`flex md:flex-row flex-col py-2`}>
-      <div className={`flex-1 ${styles.flexStart} flex-col xl:px-0 sm:px-16 px-6`}>
-        <div className="flex flex-col justify-between items-left w-full">
+      <div className={`flex-1 item-start flex-col xl:px-0 sm:px-16 px-6 py-12`}>
+        <div className="flex flex-col items-left w-full">
           <h1 className="flex-1 font-sans font-semibold ss:text-[78px] text-[58px] min-w-[600px] text-black dark:text-white ss:leading-relaxed leading-relaxed">
             Hi, I am Brian Du. <br className="sm:block hidden" />{" "}
           </h1>
@@ -46,7 +46,7 @@ const Hero = () => {
             <div className="flex justify-center font-poppins text-zinc-600 dark:text-zinc-300 font-semibold text-lg mb-4">
                 Machine Learning Engineer
             </div>
-            <div className="flex flex-row justify-center gap-x-3 py-4 bg-white">
+            <div className="flex flex-row justify-center gap-x-3 py-4 bg-white dark:bg-zinc-700">
               {socialMedia.map(({id, Icon, link}) => (
                 <Icon fill className='fill-black dark:fill-white'></Icon>
               ))}

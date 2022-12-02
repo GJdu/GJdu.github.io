@@ -2,13 +2,14 @@
 import React from 'react';
 import styles from '../style';
 import { barcelona } from '../assets';
-import { MoreDetails } from '../components';
+import { experience2022, experience2021, experience2020, experience2019, experience2018 } from '../constants';
+import { MoreDetails, CardExperienceLayout } from '../components';
   
 function Experiences () {
     return (
-    <div className='flex flex-col px-24 py-12 gap-16 bg-primary dark:bg-secondary'>
-        <div className='flex flex-row gap-12'>
-            <div className='max-w-2xl'>
+    <div className='flex flex-col px-24 py-12 gap-12 bg-primary dark:bg-secondary'>
+        <div className='flex flex-row gap-12 justify-between'>
+            <div className='max-w-xl'>
                 <div className={`${styles.heading} mb-6 leading-normal`}>
                     <div>
                         What I have done,
@@ -20,7 +21,7 @@ function Experiences () {
                         And places I have been.
                     </div>
                 </div>
-                <div className={`${styles.paragraphLight}`}>
+                <div className={`${styles.paragraph}`}>
                     I get asked a lot about the things I use to build software, stay productive, or buy to fool myself into thinking I’m being productive when I’m really just procrastinating. Here’s a big list of all of my favorite stuff.
                 </div>
             </div>
@@ -28,64 +29,11 @@ function Experiences () {
                 <img src={barcelona} alt="barcelona" className='rounded-2xl aspect-square rotate-6'/>
             </div>
         </div>
-        <div className='flex w-3xl border-l-2 mb-12'>
-            <div className={`${styles.paragraphLight} w-[200px] ml-12 mt-2`}>
-                2022
-            </div>
-            <div className='flex flex-col gap-12'>
-                <div className='flex flex-col rounded-lg hover:bg-zinc-100 px-4 py-4 max-w-xl'>
-                    <div className={`${styles.heading3}`}>
-                        Master’s in Computer Vision
-                    </div>
-                    <div className={`${styles.paragraphLight} mt-2`}>
-                        Master’s program in Computer Vision at the Universidad Autónoma de
-                        Barcelona. Through it, I developed a strong understanding in machine learning across a variety of computer
-                        vision related topics, including 3D vision, object detection, tracking, and much more.
-                    </div>
-                    <MoreDetails/>
-                </div>
-
-                <div className='flex flex-col rounded-lg hover:bg-zinc-100 px-4 py-4 max-w-xl'>
-                    <div className={`${styles.heading3}`}>
-                        Visual Sentiment Recognition at AIWELL
-                    </div>
-                    <div className={`${styles.paragraphLight} mt-2`}>
-                        Sponsored by the collaboration scholarships from the Ministry of Education, Spain. 
-                        Experimented and developed image classification algorithm for Visual Sentiment Recognition through combining both visual information and semantic cues in a two-stream architecture.
-                    </div>
-                    <MoreDetails/>
-                </div>
-            </div>
-        </div>
-        <div className='flex w-3xl border-l-2'>
-            <div className={`${styles.paragraphLight} w-[200px] ml-12 mt-2`}>
-                2021
-            </div>
-            <div className='flex flex-col gap-12'>
-                <div className='flex flex-col rounded-lg hover:bg-zinc-100 px-4 py-4 max-w-xl'>
-                    <div className={`${styles.heading3}`}>
-                        León Tourisum Project at BISITE Research Group
-                    </div>
-                    <div className={`${styles.paragraphLight} mt-2`}>
-                        Master’s program in Computer Vision at the Universidad Autónoma de
-                        Barcelona. Through it, I developed a strong understanding in machine learning across a variety of computer
-                        vision related topics, including 3D vision, object detection, tracking, and much more.
-                    </div>
-                    <MoreDetails/>
-                </div>
-
-                <div className='flex flex-col rounded-lg hover:bg-zinc-100 px-4 py-4 max-w-xl'>
-                    <div className={`${styles.heading3}`}>
-                        Visual Sentiment Recognition at AIWELL
-                    </div>
-                    <div className={`${styles.paragraphLight} mt-2`}>
-                        Sponsored by the collaboration scholarships from the Ministry of Education, Spain. 
-                        Experimented and developed image classification algorithm for Visual Sentiment Recognition through combining both visual information and semantic cues in a two-stream architecture.
-                    </div>
-                    <MoreDetails/>
-                </div>
-            </div>
-        </div>
+        <CardExperienceLayout year={"2022"} props={experience2022} />
+        <CardExperienceLayout year={"2021"} props={experience2021} />
+        <CardExperienceLayout year={"2020"} props={experience2020} />
+        <CardExperienceLayout year={"2019"} props={experience2019} />
+        <CardExperienceLayout year={"2018"} props={experience2018} />
     </div>
     )
 }

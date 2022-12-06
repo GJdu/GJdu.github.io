@@ -41,7 +41,7 @@ const Hero = () => {
                 Du
             </div>
             <div className="flex justify-center py-4">
-              <div class="h-0.5 bg-gradient-to-r from-teal-500 to-blue-500 w-[60px]"></div>
+              <div className="h-0.5 bg-gradient-to-r from-teal-500 to-blue-500 w-[60px]"></div>
             </div>
             <div className="flex justify-center font-poppins text-zinc-600 dark:text-zinc-300 font-semibold text-lg mb-4">
                 Machine Learning Engineer

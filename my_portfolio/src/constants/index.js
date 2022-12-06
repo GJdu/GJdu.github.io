@@ -1,5 +1,7 @@
 import { Facebook, Instagram, Linkedin, Twitter,
           DSTG, Consilium,
+          cityai, leon,
+          cctvCamera, tourism,
           unreal, tensorflow, pytorch, keras, python, cplusplus, colab,
           chinese, english, spanish ,
           infinite_img, 
@@ -156,7 +158,7 @@ export const experience2019 = [
     id: "experience-1",
     location: "The University of Adelaide, Australia",
     title: "Bachelor of Engineering (Electrical and Electronics) (Honours) with Bachelor of Finance",
-    description: "Graduated with First class honours with a overall GPA of 6.25/7.",
+    description: "Graduated with First Class Honours with a overall GPA of 6.25/7.",
                 
   },
   {
@@ -210,5 +212,26 @@ export const experience2018 = [
     title: "Exchange Program",
     description: "heavy drinking",
                 
+  },
+];
+
+export const projects = [
+  {
+    id: "project-1",
+    icon: cctvCamera,
+    image: cityai,
+    title: "CVPR AI City Challenge",
+    link: "github.com",
+    link_address: "https://github.com/",
+    description: "City-scale multi-camera vehicle tracking: Keep track of and differentiate between moving vehicles appearing in sequences taken from static cameras. Establish correspondences between identified tracks across different cameras.",
+  },
+  {
+    id: "project-2",
+    icon: tourism,
+    image: leon,
+    title: "León Tourism Project",
+    link: "github.com",
+    link_address: "https://github.com/GJdu/Tourism-Project",
+    description: "Developed Python software pipeline to automate web scrapping for Instagram posts and performed image analysis using facial recognition and emotion classification. Developed machine learning models for detection of selfie images while utilising transfer learning techniques.",
   },
 ];

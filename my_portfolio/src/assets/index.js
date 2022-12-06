@@ -12,6 +12,12 @@ import { ReactComponent as Facebook } from "./facebook.svg";
 import { ReactComponent as Instagram } from "./instagram.svg";
 import { ReactComponent as Twitter } from "./twitter.svg";
 
+import cityai from "./cityai.gif";
+import leon from "./leon.png";
+
+import cctvCamera from "./cctvCamera.png";
+import tourism from "./tourism.png";
+
 import unreal from "./unreal-engine.svg";
 import tensorflow from "./tensorflow.svg";
 import pytorch from "./pytorch.svg";
@@ -42,6 +48,12 @@ export {
   dropbox,
   menu,
   close,
+
+  cityai,
+  leon,
+
+  cctvCamera,
+  tourism,
 
   // Socials
   Facebook,

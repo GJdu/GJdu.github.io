@@ -26,7 +26,7 @@ function Experiences () {
                 </div>
             </div>
             <div className='max-w-xs'>
-                <img src={barcelona} alt="barcelona" className='rounded-2xl aspect-square rotate-6'/>
+                <img src={barcelona} alt="barcelona" className='object-center rounded-2xl aspect-square rotate-6'/>
             </div>
         </div>
         <CardExperienceLayout year={"2022"} props={experience2022} />

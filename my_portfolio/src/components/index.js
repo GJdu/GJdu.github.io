@@ -11,6 +11,7 @@ import Skills from "./Skills";
 import MoreDetails from "./MoreDetails";
 import CardExperience from "./CardExperience";
 import CardExperienceLayout from "./CardExperienceLayout";
+import CardProject from "./CardProject";
 
 export {
 
@@ -26,6 +27,7 @@ export {
   MoreDetails,
   CardExperience,
   CardExperienceLayout,
+  CardProject,
 
   // Pages
   About,

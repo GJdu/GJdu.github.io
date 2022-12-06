@@ -28,7 +28,7 @@ function Navbar () {
                         <Link to={nav.route} className="block">
                             {nav.title}
                             {nav.route === location.pathname ? 
-                                <span class="absolute inset-x-1 -bottom-px h-px bg-gradient-to-r from-teal-500/0 via-teal-500/40 to-teal-500/0 dark:from-teal-400/0 dark:via-teal-400/40 dark:to-teal-400/0"></span>
+                                <span className="absolute inset-x-1 -bottom-px h-px bg-gradient-to-r from-teal-500/0 via-teal-500/40 to-teal-500/0 dark:from-teal-400/0 dark:via-teal-400/40 dark:to-teal-400/0"></span>
                                 : <span></span>
                         }
                         </Link>

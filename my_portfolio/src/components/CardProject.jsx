@@ -32,7 +32,7 @@ const CardProject = (props) => {
 
         </div>
         <div>
-            <img src={props.image} alt={props.id} className="max-w-xs aspect-video object-center rounded-xl"/>
+            <img src={props.image} alt={props.id} className="max-w-[290px] md:max-w-xs aspect-video object-center rounded-xl"/>
         </div>
     </div>
 

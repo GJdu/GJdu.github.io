@@ -6,7 +6,7 @@ import { projects } from "../constants"
 
 function Projects (){
 return (
-<div className='flex flex-col px-1 md:px-24 py-12 gap-12 bg-primary dark:bg-secondary'>
+<div className='flex flex-col px-6 md:px-24 py-12 gap-12 bg-primary dark:bg-secondary'>
         <div className='flex flex-row gap-12 justify-between'>
             <div className='max-w-xl'>
                 <div className={`${styles.heading}`}>

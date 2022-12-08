@@ -9,7 +9,7 @@ return (
 <div className='flex flex-col px-24 py-12 gap-12 bg-primary dark:bg-secondary'>
         <div className='flex flex-row gap-12 justify-between'>
             <div className='max-w-xl'>
-                <div className={`${styles.heading} mb-6 leading-normal`}>
+                <div className={`${styles.heading}`}>
                     <div>
                         Projects I have worked on
                     </div>

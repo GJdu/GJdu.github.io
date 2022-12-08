@@ -37,40 +37,40 @@ function Navbar () {
                 ))}
             </ul>
 
-            <div className='sm:hidden flex flex-1 justify-end item-center'>
+            <ul className='flex justify-center items-center
+            rounded-full bg-dimWhite dark:bg-zinc-800 shadow-lg w-10 h-10' 
+            >
+                <div className='sm:flex justify-end item-center'>
+                    <DarkModeSwitcher/>
+                </div>
+            </ul>
+
+            <div className='sm:hidden flex flex-1 justify-end item-center cursor-pointer'>
                 <img 
                     src={toggle ? close : menu} 
                     alt="menu" 
-                    className='w-[28px] h-[28px] object-contain'
+                    className='w-6 h-6 object-contain fill-black dark:fill-white'
                     onClick={() => setToggle((prev) => !prev)}
                 />
             </div>
 
-            <div className={`${toggle ? 'flex' : 'hidden'} 
-            p-6 bg-black-gradient absolute top-20 right-0 mx-4 my-2 min-w-[140px] rounded-x1 sidebar`}>
+            <div className={`sm:hidden ${toggle ? 'flex' : 'hidden'} 
+            p-6 bg-zinc-100 dark:bg-zinc-800 rounded-2xl absolute top-20 right-0 mx-2 my-2 min-w-[140px] rounded-x1 sidebar`}>
                 <ul className='list-none flex flex-col justify-end items-center flex-1'>
                     {navLinks.map((nav, index) => (
                         <li
                         key={nav.id}
-                        className={`font-poppins font-normal cursor-pointer text-[16px]
+                        className={`font-sans hover:text-teal-400 dark:hover:text-teal-400 font-bold cursor-pointer text-[12px]
                         ${index === navLinks.length -1 ? 'mr-0' : 'mb-4'} 
                         text-black dark:text-white`}
                         >
-                            <a href={`#${nav.id}`}>
+                            <a href={`${nav.route}`}>
                                 {nav.title}
                             </a>
                         </li>
                     ))}
                 </ul>
             </div>
-
-            <ul className='list-none sm:flex hidden justify-center items-center
-            rounded-full bg-dimWhite dark:bg-zinc-800 sm:shadow-lg sm:w-10 sm:h-10' 
-            >
-                <div className='sm:flex justify-end item-center'>
-                    <DarkModeSwitcher/>
-                </div>
-            </ul>
         </nav>
     );
 }

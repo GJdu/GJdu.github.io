@@ -8,7 +8,7 @@ import {Link} from 'react-router-dom';
 
 const CardProject = (props) => {
   return (
-    <div className='flex flex-row gap-12 hover:bg-zinc-100 hover:dark:bg-zinc-800 rounded-lg px-4 py-4 group'>
+    <div className='flex md:flex-row flex-col gap-12 hover:bg-zinc-100 hover:dark:bg-zinc-800 rounded-lg px-4 py-4 group'>
         <div className='flex flex-col max-w-xl'>
             <div>
                 <img src={props.icon} alt="" className='w-[32px]'/>

@@ -12,8 +12,8 @@ const JobCard = () => {
                 <li
                     key={id}
                 >
-                    <div className='flex items-center my-4'>
-                        <div className='w-16 h-8 mr-4 relative'>
+                    <div className='flex flex-col md:flex-row md:items-center'>
+                        <div className='w-16 h-8 md:mr-4 mt-6 relative'>
                             <Logo fill className='fill-black dark:fill-white'></Logo>
                         </div>
                         <div className='flex-1'>

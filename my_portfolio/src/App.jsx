@@ -11,7 +11,7 @@ function App () {
   return (
       <Layout>
           <Router>
-            <div className='bg-primary dark:bg-secondary w-full overflow-hidden'>
+            <div className='bg-primary dark:bg-secondary w-full'>
               <div className={`${styles.paddingX} ${styles.flexCenter}`}>
                 <div className={`${styles.boxWidth}`}>
                   <Navbar/>

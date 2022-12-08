@@ -4,7 +4,7 @@ import CardExperience from './CardExperience'
 
 const CardExperienceLayout = ({year, props}) => {
   return (
-    <div className='flex w-3xl border-l-2 mb-12'>
+    <div className='flex max-w-3xl border-l-2 mb-12'>
             <div className={`${styles.paragraphLight} w-[100px] md:w-[200px] ml-4 md:ml-12 mt-2`}>
                 {year}
             </div>

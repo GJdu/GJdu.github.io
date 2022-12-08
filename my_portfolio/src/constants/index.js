@@ -222,7 +222,7 @@ export const projects = [
     image: cityai,
     title: "CVPR AI City Challenge",
     link: "github.com",
-    link_address: "https://github.com/",
+    link_address: "https://github.com/mcv-m6-video/mcv-m6-2022-team5",
     description: "City-scale multi-camera vehicle tracking: Keep track of and differentiate between moving vehicles appearing in sequences taken from static cameras. Establish correspondences between identified tracks across different cameras.",
   },
   {

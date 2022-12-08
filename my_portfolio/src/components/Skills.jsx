@@ -10,7 +10,7 @@ const [s_description, setDescription] = useState()
 const [s_title, setTitle] = useState("Click the Icons!")
 
 return (
-<div className='flex flex-row justify-center bg-primary dark:bg-secondary py-12 px-6 gap-36'>
+<div className='flex flex-col md:flex-row justify-center bg-primary dark:bg-secondary py-12 px-6 gap-36'>
 	<div>
 		<div className='grid grid-cols-5 gap-3'>
 			{skill.map((s, index) => (

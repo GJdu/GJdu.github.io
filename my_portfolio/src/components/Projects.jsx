@@ -6,7 +6,7 @@ import { projects } from "../constants"
 
 function Projects (){
 return (
-<div className='flex flex-col px-24 py-12 gap-12 bg-primary dark:bg-secondary'>
+<div className='flex flex-col px-1 md:px-24 py-12 gap-12 bg-primary dark:bg-secondary'>
         <div className='flex flex-row gap-12 justify-between'>
             <div className='max-w-xl'>
                 <div className={`${styles.heading}`}>
@@ -20,7 +20,7 @@ return (
             </div>
         </div>
 		<div className='flex border-l-2 mb-12'>
-            <div className='flex flex-col gap-6 ml-12'>
+            <div className='flex flex-col gap-6 ml-2 md:ml-12'>
                 {projects.map(({id, image, title, description, link, link_address, icon}) => (
                     <CardProject 
                     id={id}

@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 
-import {close, portrait, menu } from '../assets';
+import {Close, portrait, Menu } from '../assets';
 import {navLinks} from '../constants';
 import { DarkModeSwitcher } from '../components';
 
@@ -46,12 +46,8 @@ function Navbar () {
             </ul>
 
             <div className='sm:hidden flex flex-1 justify-end item-center cursor-pointer'>
-                <img 
-                    src={toggle ? close : menu} 
-                    alt="menu" 
-                    className='w-6 h-6 object-contain fill-black dark:fill-white'
-                    onClick={() => setToggle((prev) => !prev)}
-                />
+                {toggle ? <Close className="fill-black dark:fill-white" onClick={() => setToggle((prev) => !prev)}/> : 
+                <Menu className="fill-black dark:fill-white" onClick={() => setToggle((prev) => !prev)}/>}
             </div>
 
             <div className={`sm:hidden ${toggle ? 'flex' : 'hidden'} 
@@ -64,9 +60,9 @@ function Navbar () {
                         ${index === navLinks.length -1 ? 'mr-0' : 'mb-4'} 
                         text-black dark:text-white`}
                         >
-                            <a href={`${nav.route}`}>
+                            <Link to={nav.route} className="block">
                                 {nav.title}
-                            </a>
+                            </Link>
                         </li>
                     ))}
                 </ul>

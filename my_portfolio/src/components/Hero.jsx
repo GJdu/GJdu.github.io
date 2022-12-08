@@ -7,12 +7,12 @@ import { JobCard } from '../components';
 const Hero = () => {
   return (
     <section id="hero" className={`flex md:flex-row flex-col-reverse py-2`}>
-      <div className={`flex item-start flex-col xl:px-0 sm:px-16 px-6 py-12`}>
+      <div className={`flex item-start flex-col sm:px-16 px-6 py-12`}>
         <div className="flex flex-col items-left w-full">
           <h1 className={`"flex-1" ${styles.heading}`}>
             Hi, I am Brian Du.
           </h1>
-          <p className="flex-1 font-sans font-semibold max-w-[550px] ss:text-[28px] text-[22px] text-black dark:text-white ss:leading-normal leading-normal">
+          <p className="flex-1 font-sans font-semibold max-w-[550px] ss:text-[28px] text-[22px] text-black dark:text-white leading-normal">
             An aspiring young computer vision scientist looking to transform the world with AI solutions.<br className="sm:block hidden" />{" "}
           </p>
         </div>
@@ -29,30 +29,30 @@ const Hero = () => {
         </p>
       </div>
 
-      <div className={`flex flex-col my-10 gap-y-16 mx-8 px-2`}>
-        <div className="flex justify-center">
-          <div className="flex flex-col bg-zinc-100 dark:bg-zinc-800 shadow-lg w-[400px] shrink">
+      <div className={`flex flex-col items-center my-10 gap-y-16 mx-2 md:mx-8`}>
+        <div className="flex flex-col shadow-lg max-w-[350px]">
+          <div className="flex flex-col items-center bg-zinc-100 dark:bg-zinc-800 px-8">
               <div className="flex justify-center py-4">
                 <img src={portrait} alt="portrait" className="rounded-full max-w-[200px] max-h-[200px]"/>
               </div>
-              <div className="flex justify-center text-black dark:text-white font-bold text-3xl">
+              <div className=" text-black dark:text-white font-bold text-3xl">
                   Brian
               </div>
-              <div className="flex justify-center text-black dark:text-white font-bold text-3xl">
+              <div className=" text-black dark:text-white font-bold text-3xl">
                   Du
               </div>
-              <div className="flex justify-center py-4">
+              <div className="py-4">
                 <div className="h-0.5 bg-gradient-to-r from-teal-500 to-blue-500 w-[60px]"></div>
               </div>
-              <div className="flex justify-center font-poppins text-zinc-600 dark:text-zinc-300 font-semibold text-lg mb-4">
+              <div className="font-poppins text-zinc-600 dark:text-zinc-300 font-semibold text-lg mb-4">
                   Machine Learning Engineer
               </div>
-              <div className="flex flex-row justify-center gap-x-3 py-4 bg-white dark:bg-zinc-700">
+            </div>
+            <div className="flex flex-row justify-center gap-x-3 py-4 px-8 bg-white dark:bg-zinc-700">
                 {socialMedia.map(({id, Icon, link}) => (
                   <Icon fill className='fill-black dark:fill-white cursor-pointer'></Icon>
                 ))}
               </div>
-            </div>
         </div>
         <div>
           <JobCard/>

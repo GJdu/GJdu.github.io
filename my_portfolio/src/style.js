@@ -4,7 +4,7 @@ const styles = {
   heading: "font-sans font-bold text-zinc-800 dark:text-zinc-100 text-4xl md:text-5xl track-tight mb-6 leading-normal",
   heading2: "font-sans font-bold text-zinc-700 dark:text-zinc-200 text-[38px]",
   heading3: "font-sans font-semibold text-black dark:text-zinc-100 text-lg",
-  paragraph: "font-sans font-normal text-zinc-700 dark:text-zinc-200 text-[14px] leading-relaxed text-justify",
+  paragraph: "font-sans font-normal text-zinc-700 dark:text-zinc-200 text-[14px] leading-relaxed md:text-justify",
   paragraphLight: "font-sans font-normal text-sm text-zinc-400 dark:text-500",
 
   paragraphlink: "font-sans font-normal text-teal-400 text-sm",

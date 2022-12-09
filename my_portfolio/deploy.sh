@@ -3,6 +3,11 @@
 # abort on errors
 set -e
 
+if [ -f "dist" ]; 
+then
+rm -R dist
+fi
+
 # build
 npm run build
 
